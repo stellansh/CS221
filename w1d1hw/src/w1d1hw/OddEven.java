@@ -43,4 +43,7 @@ public class OddEven {
         System.out.println("even digits:" + evenCount);
         System.out.println("zero digits:" + zeroCount);
     }
-}
+}/*Enter a number: 123400
+odd digits:2
+even digits:2
+zero digits:2*/

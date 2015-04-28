@@ -37,4 +37,10 @@ public class Dollars {
         System.out.println("pennies:"+pennies);
 
     }
-}
+}   /*how much?:
+   12.34
+   dollars:12
+   quarters:1
+   dimes:0
+   nickels:1
+   pennies:3*/

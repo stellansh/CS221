@@ -14,8 +14,10 @@ import java.util.Scanner;
 public class TestDigitalCamera {
     public static void main(String[] args){
         Scanner input1 = new Scanner(System.in);
+         System.out.println("what brand?;");
         String brand1 = input1.next();
         Scanner input2 = new Scanner(System.in);
+        System.out.println("what megapixel?;");
         int megapixels = input2.nextInt();
         DigitalCamera c1 = new DigitalCamera("canon",3);
         DigitalCamera c2 = new DigitalCamera("olympus",21);
@@ -26,4 +28,19 @@ public class TestDigitalCamera {
         c3.DisplayDetails();
         c4.DisplayDetails();
         }
-}
+}/*what brand?;
+canon
+what megapixel?;
+13
+Brand:canon
+Megapixel:3
+Price:99
+Brand:olympus
+Megapixel:21
+Price:129
+Brand:Apple
+Megapixel:6
+Price:99
+Brand:samsung
+Megapixel:56
+Price:129*/
