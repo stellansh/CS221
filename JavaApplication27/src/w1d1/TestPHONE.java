@@ -1,4 +1,4 @@
-package w1d1practice;
+package w1d1;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

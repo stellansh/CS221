@@ -1,4 +1,4 @@
-package w1d1practice;
+package w1d1;
 
 
 import java.util.Scanner;
