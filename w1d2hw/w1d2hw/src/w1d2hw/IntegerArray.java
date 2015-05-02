@@ -5,6 +5,8 @@
  */
 package w1d2hw;
 
+import java.util.Arrays;
+
 /**
  *
  * @author stella
@@ -12,19 +14,22 @@ package w1d2hw;
 public class IntegerArray {
 
     private int[] theArray = new int[60];
-    private int size = 50;
+    private int size = 10;
 
     public void generateRandomArray() {
         for (int i = 0; i <size; i++) {
-            theArray[i] = (int) (Math.random()*100);
+            theArray[i] = (int) (Math.random()*5);
         }
     }
 
     public void removeDuplicate() {
-        for (int i = 0; i > size; i++) {
-            for (int j = 1; j < size - 1; i++) {
+        int i;
+        int j;
+        for ( i = 0; i <size; i++) {
+            for ( j = i+1; j < size ; j++) {
                 if (theArray[i] == theArray[j]) {
                     deleteIndex(j);
+                     j--;
                 }
             }
 
@@ -42,6 +47,7 @@ public class IntegerArray {
             }
 
             size--;
+           
 
         }
     }
@@ -68,8 +74,8 @@ public class IntegerArray {
     public int[] getSubList(int first,int last){
         int[] tempo=null;
         if(first<size && last<size){
-             int newsize = last - first;
-            tempo = new int[size];
+             int newsize = last - first+1;
+            tempo = new int[newsize];
             for (int i=0;i<newsize;i++){
                 tempo[i]=theArray[first];
                 first++;
@@ -89,9 +95,13 @@ public class IntegerArray {
         newstrArray.generateRandomArray();
         newstrArray.printArray();
         System.out.println("Value at Index(9) : " + newstrArray.get(9));
-        newstrArray.removeDuplicate();
+        //newstrArray.removeDuplicate();
         System.out.println("with no duplication ");
         newstrArray.printArray();
+        System.out.println("");
+        System.out.println("SUB : " );
+        int[] num =newstrArray.getSubList(2,4);
+        System.out.println("sub" + Arrays.toString(num));
     }
 }    
         
