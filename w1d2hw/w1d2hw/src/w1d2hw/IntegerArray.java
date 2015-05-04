@@ -100,8 +100,8 @@ public class IntegerArray {
         newstrArray.printArray();
         System.out.println("");
         System.out.println("SUB : " );
-        int[] num =newstrArray.getSubList(2,4);
-        System.out.println("sub" + Arrays.toString(num));
+        int[] sub =newstrArray.getSubList(2,4);
+        System.out.println("sub" + Arrays.toString(sub));
     }
 }    
         
