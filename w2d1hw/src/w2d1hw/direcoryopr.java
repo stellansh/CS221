@@ -9,27 +9,13 @@ package w2d1hw;
  *
  * @author stella
  */
-public class Directory {
-
-    String name;
-    long pno;
-    Directory next;
-
-    public Directory(String name, long pno) {
-        this.name = name;
-        this.pno = pno;
-    }
-
-    public void displayDirectory() {
-        System.out.println("{" + name + "," + pno + "} ");
-    }
-
-    class DirectoryOpr {
+//public class direcoryopr {
+   class direcoryopr{
 
         private Directory first;
         private Directory last;
 
-        public DirectoryOpr() {
+        public direcoryopr() {
             first = null;
             last = null;
         }
@@ -98,7 +84,7 @@ public class Directory {
             }
             return null;
         }
-        //public static void main(String[] args) {
+        
     }
-    
-}
+     
+
