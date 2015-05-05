@@ -24,7 +24,7 @@ class Link {
     }
 
     // -------------------------------------------------------------
-    public void displayLink() // display ourself
+    public void displayLink()
     {
         System.out.print("{" + iData + ", " + dData + "} ");
     }
@@ -61,6 +61,7 @@ public class LinkList {
                return true;
             }
             else{
+                 
                 current=current.next;
             }
         }
@@ -92,7 +93,8 @@ public class LinkList {
     public Link deleteFirst() // delete first item
     {                           // (assumes list not empty)
         Link temp = first;          // save reference to link
-        first = first.next;         // delete it: first-->old next
+        first = first.next; 
+        count--;// delete it: first-->old next
         return temp;                // return deleted link
     }
 
@@ -114,12 +116,15 @@ public class LinkList {
         num.insertFirst(20, 2.22);
         num.insertFirst(30, 3.33);
         num.insertFirst(42, 4.44);
+        num.insertFirst(45, 4.44);
+        
         num.displayList();
         System.out.println();
         System.out.println("greatest Integer is: " + num.greater());
         System.out.println("smallest Integer is: " + num.smaller());
+        System.out.println("after deleting:"+ num.deleteFirst());
         System.out.println("Size: " + num.size());
-        System.out.println("50?: " +num.find(10));
+        System.out.println("20?: " +num.find(50));
         System.out.println("30?: " + num.find(30));
     }
     
