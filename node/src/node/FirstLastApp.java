@@ -13,7 +13,7 @@ package node;
     class FirstLastApp {
 
     public static void main(String[] args) {                              // make a new list
-        FirstLastList theList = new FirstLastList();
+        FirstLastLinked theList = new FirstLastLinked();
 
         theList.insertFirst(22);       // insert at front
         theList.insertFirst(44);

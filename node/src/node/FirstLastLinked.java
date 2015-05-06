@@ -9,14 +9,13 @@ package node;
  *
  * @author stella
  */
-//class FirstLastLinked {
-class Link1 {
+class Link13 {
 
     public long dData;                 // data item
-    public Link1 next;                  // next link in list
+    public Link13 next;                  // next link in list
 //-------------------------------------------------------------
 
-    public Link1(long d) // constructor
+    public Link13(long d) // constructor
     {
         dData = d;
     }
@@ -30,13 +29,13 @@ class Link1 {
 }  // end class Link
 ////////////////////////////////////////////////////////////////
 
-class FirstLastList {
+class FirstLastLinked {
 
-    private Link1 first;               // ref to first link
-    private Link1 last;                // ref to last link
+    private Link13 first;               // ref to first link
+    private Link13 last;                // ref to last link
 //-------------------------------------------------------------
 
-    public FirstLastList() // constructor
+    public FirstLastLinked() // constructor
     {
         first = null;                  // no links on list yet
         last = null;
@@ -51,7 +50,7 @@ class FirstLastList {
 
     public void insertFirst(long dd) // insert at front of list
     {
-        Link1 newLink = new Link1(dd);   // make new link
+        Link13 newLink = new Link13(dd);   // make new link
 
         if (isEmpty()) // if empty list,
         {
@@ -64,7 +63,7 @@ class FirstLastList {
 
     public void insertLast(long dd) // insert at end of list
     {
-        Link1 newLink = new Link1(dd);   // make new link
+        Link13 newLink = new Link13(dd);   // make new link
         if (isEmpty()) // if empty list,
         {
             first = newLink;            // first --> newLink
@@ -89,7 +88,7 @@ class FirstLastList {
 //-------------------------------------------------------------
     public void displayList() {
         System.out.print("List (first-->last): ");
-        Link1 current = first;          // start at beginning
+        Link13 current = first;          // start at beginning
         while (current != null) // until end of list,
         {
             current.displayLink();      // print data

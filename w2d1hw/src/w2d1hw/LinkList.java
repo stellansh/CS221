@@ -14,7 +14,8 @@ class Link {
 // data item
     public int iData;
     public double dData;           
-    public Link next;              // next link in list
+    public Link next; // next link in list
+    
     // -------------------------------------------------------------
 
     public Link(int id, double dd) {
@@ -94,7 +95,7 @@ public class LinkList {
     {                           // (assumes list not empty)
         Link temp = first;          // save reference to link
         first = first.next; 
-        count--;// delete it: first-->old next
+        count--;         // delete it: first-->old next
         return temp;                // return deleted link
     }
 
@@ -116,7 +117,6 @@ public class LinkList {
         num.insertFirst(20, 2.22);
         num.insertFirst(30, 3.33);
         num.insertFirst(42, 4.44);
-        num.insertFirst(45, 4.44);
         
         num.displayList();
         System.out.println();
