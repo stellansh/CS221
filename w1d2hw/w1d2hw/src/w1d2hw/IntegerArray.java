@@ -11,10 +11,10 @@ import java.util.Arrays;
  *
  * @author stella
  */
-public class IntegerArray {
+public class IntegerArray <T>{
 
-    private int[] theArray = new int[60];
-    private int size = 10;
+    private T[] theArray;
+    private T[] size;
 
     public void generateRandomArray() {
         for (int i = 0; i <size; i++) {
@@ -102,7 +102,24 @@ public class IntegerArray {
         System.out.println("SUB : " );
         int[] sub =newstrArray.getSubList(2,4);
         System.out.println("sub" + Arrays.toString(sub));
-    }
+    }}
+    public class TestDigitalCamera {
+    public static void main(String[] args){
+        Scanner input1 = new Scanner(System.in);
+         System.out.println("what brand?;");
+        String brand1 = input1.next();
+        Scanner input2 = new Scanner(System.in);
+        System.out.println("what megapixel?;");
+        int megapixels = input2.nextInt();
+        DigitalCamera c1 = new DigitalCamera("canon",3);
+        DigitalCamera c2 = new DigitalCamera("olympus",21);
+        DigitalCamera c3 = new DigitalCamera("Apple",6);
+        DigitalCamera c4 = new DigitalCamera("samsung",56);
+        c1.DisplayDetails();
+        c2.DisplayDetails();
+        c3.DisplayDetails();
+        c4.DisplayDetails();
+        }
 }    
         
         

@@ -23,8 +23,8 @@ class Node {
     public String toString() {
         return value;
     }
-
-    class MyStringLinkedList {
+}
+ class MyStringLinkedList {
 
         Node first;
         Node last;
@@ -44,7 +44,7 @@ class Node {
 
                 newNode.next = first;
                 first.previous = newNode;
-                first = newNode;
+                first=newNode;
 
             }
 
@@ -162,12 +162,12 @@ class Node {
         }
 
     }
-}
+
 
 public class StringLinkedApp {
 
     public static void main(String[] args) {
-        MyStringLinkedList LList = new MyStringLinkedList();
+        MyStringLinkedList LList= new MyStringLinkedList();
 
         LList.addFront("stella");
         LList.addFront("Bella");
@@ -183,4 +183,5 @@ public class StringLinkedApp {
         LList.findItem("stella").toString();
         System.out.println(LList.Size());
     }
+    
 }
