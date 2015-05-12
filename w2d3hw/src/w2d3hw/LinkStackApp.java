@@ -28,7 +28,7 @@ class LinkList1<T> {
             System.out.print(dData + " ");
         }
     }  // end class Link
-
+//class SortedList{
     private Link first;            // ref to first item on list
 //-------------------------------------------------------------
 

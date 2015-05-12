@@ -53,7 +53,7 @@ public class Occurences<T> {
 
         Array<Integer> it = new Array<Integer>(20);
 
-        Integer[] b = new Integer[]{10,20,10,10,30, 10, 40, 10, 60};
+        Integer[] b = {10,20,10,10,30, 10, 40, 10, 60};
         System.out.println("Number of counts of 10 : " + it.countOccurrences(b, 10));
 
     }

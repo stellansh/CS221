@@ -15,6 +15,8 @@ public class TestNode {
         Node start = new Node(0);
 
         //System.out.println(start);
+        //Object[] o1 = {10,"Java",45.67};
+
         String[] arr = {"java", "DS", "discrete", "c#", "python"};
         int a[] = {10, 20, 30, 40, 50};
         Node current = start;

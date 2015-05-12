@@ -118,3 +118,6 @@ class FirstLastApp {
         theList.displayList();         // display again
     }  // end main()
 }  // end class FirstLastApp
+
+/*List (first-->last): 66 44 22 11 33 55 
+List (first-->last): 44 22 11 33 55 */
