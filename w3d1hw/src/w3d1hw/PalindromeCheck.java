@@ -36,6 +36,8 @@ public class PalindromeCheck {
         System.out.println("Enter the String for check:");
         String str = scanner.nextLine();
         int s = str.length();
+       // str="ABC";
+       System.out.println( "hsh"+str.hashCode());
         System.out.println("Is this word palindrome:" + isPal(str, 0, s - 1));
 
     }
