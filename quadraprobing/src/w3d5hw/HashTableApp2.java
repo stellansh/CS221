@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package w3d5;
+package w3d5hw;
 
 /**
  *
@@ -130,7 +130,7 @@ public class HashTableApp2 {
                     theHashTable.delete(aKey);
                     break;
                 case 'n':
-                    System.out.println("Size of hash table :" + theHashTable.getSize());
+                    System.out.println("Size is :" + theHashTable.getSize());
                     break;
                 case 'f':
                     System.out.print("Enter key value to find: ");
@@ -173,3 +173,14 @@ public class HashTableApp2 {
         return Integer.parseInt(s);
     }
 }
+/*Enter size of hash table: 11
+Enter first letter of show, insert, delete,number or find: i
+Enter key value to insert: stella
+Enter first letter of show, insert, delete,number or find: s
+Table: ** ** stella ** ** ** ** ** ** ** ** 
+Enter first letter of show, insert, delete,number or find: i
+Enter key value to insert: stella
+Enter first letter of show, insert, delete,number or find: s
+Table: ** ** stella stella ** ** ** ** ** ** ** 
+Enter first letter of show, insert, delete,number or find: n
+Size of hash table :2*/
