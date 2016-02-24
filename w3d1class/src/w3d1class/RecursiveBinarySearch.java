@@ -4,9 +4,10 @@
  * and open the template in the editor.
  */
 package w3d1class;
-
+//wiquiuyuk
 /**
  *
+ * 
  * @author stella
  */
 public class RecursiveBinarySearch {
@@ -32,4 +33,4 @@ public class RecursiveBinarySearch {
 				return binarySearch(data, target, mid + 1, high); // recur right of the middle
 		}
 	}
-}
+}//return binarySearch data, target and then change the video of my names

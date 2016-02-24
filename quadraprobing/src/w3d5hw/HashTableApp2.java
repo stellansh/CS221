@@ -64,7 +64,7 @@ class HashTable1 {
             hashVal %= arraySize;      // wraparound if necessary
         }
         hashArray[hashVal] = item;
-        nElems++;
+        //nElems++;
     }
 
     public DataItem1 delete(String key) {
@@ -103,7 +103,9 @@ public class HashTableApp2 {
 
     public static void main(String[] args) throws IOException {
         DataItem1 aDataItem;
-        int size, n, keysPerCell;
+        int size;
+        int n;
+        int keysPerCell;
         String aKey;
         // get sizes
         System.out.print("Enter size of hash table: ");

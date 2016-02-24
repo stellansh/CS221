@@ -104,7 +104,7 @@ class QueueApp {
         {                            //    all items
             Integer n = theQueue.remove();
             System.out.print(n);
-            System.out.print(" ");
+            System.out.print(" ");// que ends.
         }
         System.out.println("");
         System.out.println("Size of the Queue after deleting: " + theQueue.size());

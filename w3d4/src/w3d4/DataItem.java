@@ -11,7 +11,7 @@ package w3d4;
 import java.io.*;
 ////////////////////////////////////////////////////////////////
 
-class DataItem {                                // (could have more data)
+public class DataItem {                                // (could have more data)
 
     private int iData;               // data item (key)
 //--------------------------------------------------------------
